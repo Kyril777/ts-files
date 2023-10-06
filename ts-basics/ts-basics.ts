@@ -37,4 +37,36 @@ type User = {id: number, name: string}
 const user: User = {id: 75, name: 'Colleen'}
 console.log(user.id) // Output: 75
 
+// Type Assertion. Method 1 (using angle brackets)
+let pid: any = 86421
+// let personalId = <number>pid
+
+// Type Assertion. Method 2
+let personId = pid as number
+
+// Functions
+function sum(x: number, y: number): number {
+    return x+ y
+}
+
+console.log(sum(3,4)) // Output: 7
+
+// Void
+function log(message: string | number): void {
+    console.log(message)
+}
+log("Hola Mundo!") // Output: Hola Mundo!
+
+// Interfaces
+interface StudentInterface { 
+    id: number 
+    name: string 
+    age?: number // Set the age as optional.
+    readonly school: string // Set scool as read-only.
+} 
+
+const student1: StudentInterface = {id: 1007, name: "Rich Halpern", school: "Engineering" }
+console.log(student1) // Output: { "id": 1007, "name": "Rich Halpern", "school": "Engineering" } 
+console.log(user.id) // Output: 75
+
 // Type Assertion 
