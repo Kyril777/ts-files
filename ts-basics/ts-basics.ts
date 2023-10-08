@@ -144,3 +144,85 @@ const harrison = new Reporter(56781, 'Harrison', 'John', 'Reporter')
 console.log(harrison.press_pass) // Output: 56781 
 console.log(harrison.reporter) // Output: "Reporter" 
 console.log(harrison.registration()) // Output: "The registrant John Harrison is confirmed." 
+
+
+
+// Loops
+// For loop to print from iteration to no more than limit.
+for (let i = 0; i < 3; i++) {
+  console.log ("For loop prints number " + i);
+} 
+/* Output: 
+For loop prints number 0
+For loop prints number 1
+For loop prints number 2
+*/
+
+// For loop to print values withn in array.
+let arr = ["Lawnside", "Barrington", 
+"Haddon Heights", "Audobon", "Runnemede"];
+
+for (var val of arr) {
+  console.log("For loop prints " + val); 
+}
+/* Output:
+For loop prints Lawnside
+For loop prints Barrington
+For loop prints Haddon Heights
+For loop prints Audobon
+For loop prints Runnemede
+*/
+
+// For loop to print indexs and elements.
+let arr = ["Colonial", "Romantic", "Naturalist", "Modernist", "Contemporary"];
+for (var index in arr) {
+  console.log(index); // Output: 0, 1, 2, 3
+  console.log(arr[index]); // Output: Colonial, Romantic, Naturalist, Modernist, Contemporary
+}
+/* Output:
+0
+Colonial
+1
+Romantic
+2
+Naturalist
+3
+Modernist
+4
+Contemporary
+*/
+
+// For loop to print individual characters of a string.
+let string = "NOSTRADAMUS";
+
+for (let charr of string) {
+  console.log(char); 
+}
+/* Output: N O S T R A D A M U S */
+
+// While Loop.
+let i: number = 5;
+while (i < 10) {
+    console.log( "While loop prints number " + i )
+    i++;
+}
+/*
+While loop prints number 5
+While loop prints number 6
+While loop prints number 7
+While loop prints number 8
+While loop prints number 9
+*/
+
+// Do while loop to print from initialization to equal to limit
+let i: number = 1;
+do {
+    console.log( "While loop prints number " + i )
+    i++;
+} while ( i <= 4)
+/* Output:
+While loop prints number 1
+While loop prints number 2
+While loop prints number 3
+While loop prints number 4
+*/
