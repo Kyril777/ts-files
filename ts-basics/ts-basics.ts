@@ -100,7 +100,7 @@ console.log(bert) // Output: Patron: { "card_number": 9999, "last_name": "Harte"
 console.log(bert.confirm()) // Output: "The account by Bert Harte is active." 
 
 
-// Classes impleneting interfaces
+// Classes implementing interfaces
 interface RegistrantInterface {
     registration_number: number
     name: string
@@ -145,6 +145,36 @@ console.log(harrison.press_pass) // Output: 56781
 console.log(harrison.reporter) // Output: "Reporter" 
 console.log(harrison.registration()) // Output: "The registrant John Harrison is confirmed." 
 
+
+// Abstract classes
+abstract class Shape {
+  public abstract getArea(): number;
+
+  public toString(): string {
+    return `Shape[area=${this.getArea()}]`;
+  }
+}
+
+class Cuboid extends Shape {
+  public constructor(protected readonly width: number, protected readonly height: number, protected readonly length: number) {
+    super();
+  }
+
+  public getArea(): number {
+    return this.width * this.height *this.length;
+  }
+}
+
+const shoebox = new Cuboid(4,5,6);
+console.log(shoebox);
+/* Output:
+Cuboid: {
+  "width": 4,
+  "height": 5,
+  "length": 6
+} 
+*/
+console.log(shoebox.getArea()); // Output: 120
 
 
 // Loops
