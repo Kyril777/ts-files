@@ -256,3 +256,14 @@ While loop prints number 2
 While loop prints number 3
 While loop prints number 4
 */
+
+// While loop to calculate a factorial.
+var num:number = 6; 
+var factorial:number = 1; 
+
+while(num >=1) { 
+   factorial = factorial * num; 
+   num--; 
+} 
+console.log("The factorial  is "+factorial); // "The factorial  is 720"
+  
