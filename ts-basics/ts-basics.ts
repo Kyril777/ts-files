@@ -48,8 +48,29 @@ let personId = pid as number
 function sum(x: number, y: number): number {
     return x+ y
 }
-
 console.log(sum(3,4)) // Output: 7
+
+/* Function to get time. */
+function getTime(): number {
+  return new Date().getTime();
+}
+console.log(getTime()); // Output: 1698201160217 
+
+/* Function that multiplies two variables. */
+function multiply(x: number, y: number, ...rest: number[]) {
+  return x * y;
+}
+console.log(multiply(6, 7)); // Output: 42
+
+/* Function that calculates factorial. */
+function factorial(num: number){
+  let fact = 1;
+  for (let i = 1; i <= num; i++) {
+    fact = fact * i;
+  }
+  return fact;
+}
+console.log(factorial(6)); // Output: 720
 
 // Void
 function log(message: string | number): void {
