@@ -286,5 +286,18 @@ while(num >=1) {
    factorial = factorial * num; 
    num--; 
 } 
-console.log("The factorial  is "+factorial); // "The factorial  is 720"
-  
+console.log("The factorial  is " + factorial); // "The factorial  is 720"
+
+// Create a config object.
+const config = {
+    name: "MyWorkspace",
+    display_name: "My WorkSpace",
+    version: "2.0",
+    id: "e5bdb0902b",
+    create_time: "2018-08-08T13:24:02.651Z",
+    service: 2
+} satisfies Record<Keys, string | number >; // Error: Cannot find name 'Keys'.
+
+
+console.log(config.id); // Output: e5bdb0902b
+console.log(config.service); // Output: 2
