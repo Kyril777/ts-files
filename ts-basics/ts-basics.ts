@@ -301,3 +301,13 @@ const config = {
 
 console.log(config.id); // Output: e5bdb0902b
 console.log(config.service); // Output: 2
+
+
+// Tip: make undefined explicit instead of optional.
+type Person = {
+    name: string,
+    age: number,
+    gender: string | undefined;
+}
+
+const Regis = {name: "regis", age: 45} satisfies Person; // Error.
